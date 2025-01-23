@@ -33,16 +33,16 @@ function agregarAmigo() {
     }
 }
 
+function limpiarCaja(){
+    let caja = document.querySelector("#amigo");
+    caja.value = "";
+}
+
 function condicionesIniciales (){
     asignarTexto("h2","Digite el nombre de sus amigos");
     document.getElementById("listaAmigos").innerHTML = "";
     document.getElementById("resultado").innerHTML = "";
     limpiarCaja();
-}
-
-function limpiarCaja(){
-    let caja = document.querySelector("#amigo");
-    caja.value = "";
 }
 
 function sortearAmigo(){
